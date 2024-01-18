@@ -4,15 +4,15 @@ int main(int argc, char const *argv[])
     FILE *archivo;
     char unCaracter;
 
-    archivo = fopen("Datos.txt","r");
+    archivo = fopen("Datos.txt", "r");
 
-while (!feof(archivo))
-{
-    unCaracter=fgetc(archivo);
-    putchar(unCaracter);
-}
+    while (!feof(archivo))
+    {
+        unCaracter = fgetc(archivo);
+        putchar(unCaracter);
+    }
 
-fclose(archivo);    
+    fclose(archivo);
 
     return 0;
 }
